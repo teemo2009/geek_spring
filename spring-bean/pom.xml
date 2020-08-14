@@ -6,14 +6,18 @@
         <artifactId>geek_spring</artifactId>
         <groupId>com.geek</groupId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <name>ioc-container-overview</name>
-    <packaging>jar</packaging>
-    <groupId>com.geek</groupId>
-    <artifactId>ioc-container-overview</artifactId>
-    <version>1.0-SNAPSHOT</version>
 
+    <artifactId>spring-bean</artifactId>
+    <description>Spring Bean 基础</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.geek</groupId>
+            <artifactId>ioc-container-overview</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
