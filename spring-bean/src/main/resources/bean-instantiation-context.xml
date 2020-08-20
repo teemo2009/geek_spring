@@ -5,13 +5,15 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!--静态方法实例化bean-->
-    <bean  id="copy-by-static-method" class="com.geek.ioc.overview.domain.User" factory-method="createUser"></bean>
+    <bean  id="copy-by-static-method" class="com.geek.ioc.overview.domain.User" factory-method="createUser"/>
 
     <!--factory bean 实例化bean-->
-    <bean id="user-by-factory-bean" class="com.geek.ioc.bean.factory.UserFactoryBean"></bean>
 
     <!--实例化方法实例bean-->
     <bean id="user-by-instance-method" factory-bean="userFactory" factory-method="createUser"/>
 
     <bean id="userFactory" class="com.geek.ioc.bean.factory.DefaultUserFactory"/>
+
+    <bean id="user-by-factory-bean" class="com.geek.ioc.bean.factory.UserFactoryBean"/>
+
 </beans>
